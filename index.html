@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your music app 🎵</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+        .navbar{
+            background-color: black;
+            opacity: 0.9;
+            color: white;
+            padding: 10px;
+        }
+        .list{
+            align-items: center;
+            display: flex;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            width: 50px;
+        }
+        .lists{
+            margin-right: 100px;
+        }
+        #list-1,#list-2,#list-3{
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        .appName{
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-weight: bolder;
+            font-size: large;
+        }
+        .listt{
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .logo1{
+            width: 150px;
+        }
+        .bottom{
+            height: 80px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .body{
+            height: 591px;
+            display: flex;
+            justify-content: center;
+        }
+        #progressBar{
+            cursor: pointer;
+            width: 45vw;
+        }
+        .image1,.image2,.image3{
+            width: 30px;
+        }
+        .div{
+            background-color: black;
+            border-radius: 25px;
+            margin: 40px;
+            width: 90%;
+            padding-left: 60px;
+            padding-top: 10px;
+        }
+        .songItem{
+            width: 600px;
+            height: 35px;
+            border-radius: 30px;
+            color: aliceblue;
+            margin: 4px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: large;
+            font-family: cursive;
+            font-weight: bold;
+            align-items: center;
+        }
+        .sNo{
+            color: aliceblue;
+            font-size: large;
+            font-family: cursive;
+            font-weight: bold;
+        }
+        .singer{
+            color: aliceblue;
+            font-size: medium;
+            font-weight: bold;
+        }
+        .bottom1{
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .song{
+            color: aliceblue;
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="list" type="none">
+            <li class="lists">
+                <div class="logo1">
+                    <ul class="listt" type="none">
+                        <li><img class="logo" src="spotify.png" alt="spotify"></li>
+                        <li class="appName">Spotify</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="lists" id="list-1">Home</li>
+            <li class="lists" id="list-2">About</li>
+            <li class="lists" id="list-3">Login</li>
+        </ul>
+    </nav>
+    <div class="body" style="background-color: rgb(5, 17, 34); display: flex;">
+        <div class="div">
+            <h1 style="color: white;font-family: cursive;">Recommended songs</h1>
+            <div style="display: flex; margin-top: 20px;">
+                <div style="width: 65%;height: 400px; border: 0.2px solid white; border-radius: 20px;display: flex;flex-direction: column;padding-top: 10px;">
+                    <div class="rows" style="display: flex;flex-direction: row;justify-content: space-evenly;height: 390px;width: 100%;padding: 10px;">
+                        <div class="columns1" style="display: flex;flex-direction: column;justify-content: space-evenly;height: 385px;width: 50px;">
+                            <p class="sNo">1</p>
+                            <p class="sNo">2</p>
+                            <p class="sNo">3</p>
+                            <p class="sNo">4</p>
+                            <p class="sNo">5</p>
+                            <p class="sNo">6</p>
+                            <p class="sNo">7</p>
+                            <p class="sNo">8</p>
+                            <p class="sNo">9</p>
+                            <p class="sNo">10</p>
+                        </div>
+                        <div class="columns2" style="display: flex;flex-direction: column;justify-content: space-evenly; height: 385px;width: 80px;margin-top: 3px;">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://i.pinimg.com/474x/e1/8a/84/e18a84d895a57fe3d1cce87d368de564.jpg" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/The_Kid_Laroi_and_Justin_Bieber_-_Stay.png/220px-The_Kid_Laroi_and_Justin_Bieber_-_Stay.png" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://www.metroweekly.com/wp-content/uploads/2021/03/Screenshot-41.jpg" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://i.scdn.co/image/ab67616d0000b2739e495fb707973f3390850eea" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://i.pinimg.com/736x/38/21/94/382194fbaf52fe4a3242fc96aa34fd34.jpg" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://www.rollingstone.com/wp-content/uploads/2021/09/ckay-explainer.jpg?resize=1800,1200&w=450" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://images.complex.com/complex/images/c_fill,f_auto,g_center,w_1200/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://i0.wp.com/ratingsgamemusic.com/wp-content/uploads/2021/07/02-kane-brown-blackbear-memory-cover-art-billboard-1548-1625087674-compressed.jpeg?fit=1548%2C1024" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://images.genius.com/d0617dbe625456f4ead2cdd00fcff3cb.1000x1000x1.jpg" alt="error">
+                            <img style="width: 30px;height: 30px; border-radius: 10px;" src="https://i.pinimg.com/564x/de/b5/76/deb576c8978127e3973ca423fe40d073.jpg" alt="error">
+                        </div>
+                        <div class="columns3" style="display: flex;flex-direction: column;justify-content: space-evenly;height: 385px;width: 300px;">
+                            <p class="song">Animals</p>
+                            <p class="song">STAY</p>
+                            <p class="song">Montero</p>
+                            <p class="song">Heat Waves</p>
+                            <p class="song">Watermelon Sugar</p>
+                            <p class="song">Love Nwantini</p>
+                            <p class="song">Closer</p>
+                            <p class="song">Memory</p>
+                            <p class="song">Go Crazy</p>
+                            <p class="song">Falling</p>
+                        </div>
+                        <div class="columns4" style="display: flex;flex-direction: column;justify-content: space-evenly;height: 385px;width: 300px;">
+                            <p class="singer">Maroon 5</p>
+                            <p class="singer">kid LAROI, Justin Beiber</p>
+                            <p class="singer">Lil Nas X</p>
+                            <p class="singer">Glass Animals</p>
+                            <p class="singer">Harry Styles</p>
+                            <p class="singer">CKay</p>
+                            <p class="singer">The Chainsmokers</p>
+                            <p class="singer">Kane Brown</p>
+                            <p class="singer">Chris Brown</p>
+                            <p class="singer">Trevor Daniel</p>
+                        </div>
+                        <div class="columns5" style="display: flex;flex-direction: column;justify-content: space-evenly;height: 385px;width: 150px;">
+                            <p class="sNo">2:25</p>
+                            <p class="sNo">2:11</p>
+                            <p class="sNo">2:15</p>
+                            <p class="sNo">3:43</p>
+                            <p class="sNo">2:54</p>
+                            <p class="sNo">2:26</p>
+                            <p class="sNo">4:05</p>
+                            <p class="sNo">2:33</p>
+                            <p class="sNo">2:57</p>
+                            <p class="sNo">2:39</p>
+                        </div>
+                        <div class="columns" style="display: flex;flex-direction: column;justify-content: space-evenly;height: 385px;width: 80px;">
+                            <img id="img-1" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-2" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-3" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-4" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-5" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-6" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-7" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-8" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-9" src="play.png" alt="error" style="width: 20px;">
+                            <img id="img-10" src="play.png" alt="error" style="width: 20px;">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column;justify-content: center;margin-left: 90px;width: 20%;">
+                    <img style="width: 250px;margin-left: 40px;" src="spotify.png" alt="error">
+                    <div style="width: 350px; text-align: center;font-size: xx-large;font-family: 'Be Vietnam Pro', sans-serif;">
+                        <p style="color: white;">Listen unlimited songs on Spotify🎵</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div style="display: flex;justify-content: space-between;align-items: center;width: 200px;">
+            <img id="songThumbnail" src="" alt="error" style="width: 60px;visibility: hidden;border-radius: 8px;">
+            <p id="snger" style="color: rgb(112, 105, 105);font-size: smaller;font-weight: bold; font-family: cursive;"></p>
+        </div>
+        <div class="bottom1">
+            <div style="display: flex; width: 200px;justify-content: space-evenly;">
+                <img src="fast-backward.png" alt="error" class="image1" id="image-1">
+                <img src="play.png" alt="error" class="image2" id="image-2">
+                <img src="fast-forward-button.png" alt="error" class="image3" id="image-3">
+            </div>
+            <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        </div>
+        <div style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 200px;">
+            <img id="gif" src="YdBO.gif" alt="gif" style="width: 60px;visibility: hidden;">
+            <p id="sng" style="color: white;font-size: large;font-weight: bold;font-family: 'Be Vietnam Pro', sans-serif;"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
